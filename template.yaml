@@ -13,6 +13,19 @@ Parameters:
     Type: String
     Description: Amazon Connect Queue ID to use for the outbound call
 
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: amazon-pinpoint-connect-channel
+    Description: Amazon Pinpoint Connect Channel.  This application will place outbound calls with Amazon Connect triggered by Amazon Pinpoint.
+    Author: Amazon Pinpoint
+    SpdxLicenseId: MIT-0
+    LicenseUrl: LICENSE
+    ReadmeUrl: README.md
+    Labels: ['amazon-pinpoint', 'pinpoint', 'custom-channel', 'connect', 'python']
+    HomePageUrl: https://aws.amazon.com/pinpoint
+    SemanticVersion: 1.0.0
+    SourceCodeUrl: https://github.com/aws-samples/amazon-pinpoint-connect-channel
+
 Resources:
   ConnectSQSQueue:
     Type: AWS::SQS::Queue
